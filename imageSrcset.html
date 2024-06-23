@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my cool webiste">
+    <meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+    <title>Image srcset</title>
+</head>
+
+<body>
+    <!-- 
+        Mobile use img_1
+        Tabs use img_2
+        Laptops use img_3
+     -->
+    <img alt="Image on different screen size" width="100%" src="img_1.jpg"
+        srcset="img_1.jpg 400w, img_2.jpg 600w, img_3.jpg 800w" />
+
+    <!-- 
+        iPhone 4 use img_1
+        iPhone 12 use img_2
+        iPhone 15 use img_1
+     -->
+    <img alt="Image on different screen quality" src="img_1.jpg" srcset="img_1.jpg, img_2.jpg 1.5x, img_3.jpg 2x" />
+</body>
+
+</html>
